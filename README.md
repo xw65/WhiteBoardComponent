@@ -10,3 +10,8 @@ A react component which enables online collaboration on a shared white board/tex
 
 ##__Extra Functionalities__
 1. Online diff
+
+
+#__Author__
+CatcatCat
+ZmZ
