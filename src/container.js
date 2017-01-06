@@ -4,6 +4,9 @@
 //const React =  require('react');
 //const ReactDOM = require('react-dom');
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 class Container extends React.Component {
     constructor() {
         super();
@@ -14,14 +17,16 @@ class Container extends React.Component {
 
     render() {
       return(
-        <button onClick={() => this.setState({trick: this.props.trick})}>
-          {this.state.trick}
-        </button>
+        <div>
+          <button onClick={() => this.setState({trick: this.props.trick})}>
+            {this.state.trick}
+          </button>
+        </div>
       );
     }
 }
 
-//module.export = Container;
+module.export = Container;
 
 let trick = "You Lose! Noooooob!!!";
 ReactDOM.render(

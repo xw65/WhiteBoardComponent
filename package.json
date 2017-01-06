@@ -4,16 +4,24 @@
   "description": "A react component which enables online collaboration on a shared white board/textEditor.",
   "main": "server.js",
   "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "express": "^4.14.0",
     "hogan-express": "^0.5.2",
     "nodemon": "^1.11.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js --watch src/container.js"
+    "start": "nodemon server.js --watch src/container.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
