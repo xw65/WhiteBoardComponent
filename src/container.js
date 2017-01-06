@@ -17,16 +17,11 @@ class Container extends React.Component {
         <button onClick={() => this.setState({trick: this.props.trick})}>
           {this.state.trick}
         </button>
-        <div style={float: 'left'}>
-        </div>
-
-        <div style={flaot: 'right'}>
-        </div>
       );
     }
 }
 
-module.export = Container;
+//module.export = Container;
 
 let trick = "You Lose! Noooooob!!!";
 ReactDOM.render(
