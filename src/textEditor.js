@@ -7,9 +7,7 @@ const editorStyle = {
   border: '1px solid #ccc',
   cursor: 'text',
   minHeight: 80,
-  fontFamily: '\'Helvetica\', sans-serif',
-  padding: 20,
-  width: 600,
+  padding: 10,
 };
 
 export default class TextEditor extends React.Component {
@@ -19,6 +17,6 @@ export default class TextEditor extends React.Component {
     this.onChange = (editorState) => this.setState({editorState});
   }
   render() {
-    return <Editor editorState={this.state.editorState} onChange={this.onChange}  style={editorStyle} placeholder="Enter some text..." ref="editor" />;
+    return <Editor editorState={this.state.editorState} onChange={this.onChange} placeholder="Enter some text..." />;
   }
 };

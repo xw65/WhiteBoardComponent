@@ -2,10 +2,28 @@
 <html>
     <header>
         <title> PushPushPush! (Need update) </title>
+        <meta charset="utf-8">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </header>
     <body>
-        <h1> Hey, three lanes push! </h1>
-        <div id="container"></div>
-        <script src="../dist/bundle.js"></script>
+        <div class="container">
+          <div class="row">
+            <h1> Hey, three lanes push! </h1>
+          </div>
+          <div class="row">
+            <div class="col-sm-8" >
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div id="app" ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="../dist/bundle.js"></script>
+        </div>
     </body>
 </html>
