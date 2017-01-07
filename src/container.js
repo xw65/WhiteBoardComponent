@@ -1,13 +1,9 @@
 'use strict'
 
-// Container for text editor and white board.
-//const React =  require('react');
-//const ReactDOM = require('react-dom');
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Container extends React.Component {
+export default class Container extends React.Component {
     constructor() {
         super();
         this.state={
@@ -25,11 +21,3 @@ class Container extends React.Component {
       );
     }
 }
-
-module.export = Container;
-
-let trick = "You Lose! Noooooob!!!";
-ReactDOM.render(
-  <Container trick={trick}/>,
-  document.getElementById('container')
-);

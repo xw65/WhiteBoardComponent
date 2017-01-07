@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = {
   devtool: 'eval',
-  entry: './src/container.js',
+  entry: './src/app.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
