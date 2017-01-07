@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TextEditor from './textEditor'
 
 export default class Container extends React.Component {
     constructor() {
@@ -14,9 +15,9 @@ export default class Container extends React.Component {
     render() {
       return(
         <div>
-          <button onClick={() => this.setState({trick: this.props.trick})}>
-            {this.state.trick}
-          </button>
+          <div>
+            <TextEditor />
+          </div>
         </div>
       );
     }
