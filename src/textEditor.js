@@ -17,6 +17,6 @@ export default class TextEditor extends React.Component {
     this.onChange = (editorState) => this.setState({editorState});
   }
   render() {
-    return <Editor editorState={this.state.editorState} onChange={this.onChange} placeholder="Enter some text..." />;
+    return <Editor editorState={this.state.editorState} onChange={this.onChange} />;
   }
 };
